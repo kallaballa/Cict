@@ -36,10 +36,9 @@ int main(int argc, char** argv) {
   NamedColor sample;
   sample.rgb = strtol(argv[1], NULL, 16);
 
-
   auto nearest = ral.find_nearest(sample);
 
-  std::cerr
+  std::cout
     << std::dec << int(nearest.second) << "\t#"
     << std::setfill('0') << std::setw(6) << std::hex << (*nearest.first).rgb << "\t"
     << (*nearest.first).name << std::endl;
