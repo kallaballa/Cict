@@ -18,3 +18,6 @@ Simple pass a 24bit RGB hex value as the first and only parameter.
 
     ./colorDict 000080
 
+Output:
+
+    0 #000080 navyblue
