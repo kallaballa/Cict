@@ -3,3 +3,4 @@
 .project
 src/*.o
 src/*.dep
+colorDict
