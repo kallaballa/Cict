@@ -14,7 +14,7 @@ Additionally it outputs the hex value of the found color aswell as the distance 
 
 ##Usage
 
-Simple pass a 24bit RGB hex value as the first and only parameter. 
+Simply pass a 24bit RGB hex value as the first and only parameter. 
 
     ./colorDict 000081
 
