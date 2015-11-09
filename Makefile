@@ -2,11 +2,11 @@ ifdef JAVASCRIPT
 CXX     := em++
 endif
 ifdef JAVASCRIPT
-TARGET  := colorDict.js
+TARGET  := cict.js
 else
-TARGET  := colorDict 
+TARGET  := cict 
 endif
-SRCS    := src/ColorDict.cpp src/NamedColorTable.cpp
+SRCS    := src/Cict.cpp src/NamedColorTable.cpp
 OBJS    := ${SRCS:.cpp=.o} 
 DEPS    := ${SRCS:.cpp=.dep} 
 

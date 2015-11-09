@@ -1,4 +1,4 @@
-ColorDict
+Cict
 ============
 
 A Linux (and possibly Mac OSX) command line tool that translates color values (24bit RGB hex) to human readable names. The program reads a list of name/color mappings
@@ -8,15 +8,15 @@ Additionally it outputs the hex value of the found color aswell as the distance 
 
 ##Build
 
-    git clone https://github.com/kallaballa/ColorDict.git
-    cd ColorDict
+    git clone https://github.com/kallaballa/Cict.git
+    cd Cict
     make
 
 ##Usage
 
 Simply pass a 24bit RGB hex value as the first and only parameter. 
 
-    ./colorDict 000081
+    ./cict 000081
 
 Output:
 

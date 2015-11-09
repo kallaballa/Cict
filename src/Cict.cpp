@@ -1,5 +1,5 @@
 /*
- * ColorDict
+ * Cict
  * Copyright (C) 2015 Amir Hassan <amir@viel-zu.org>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -25,8 +25,8 @@ int main(int argc, char** argv) {
   using namespace kallaballa;
 
   if (argc != 2) {
-    std::cerr << "Usage: colorDict <24bit hex color>" << std::endl;
-    std::cerr << "Example: colorDict ffffff" << std::endl;
+    std::cerr << "Usage: cict <24bit hex color>" << std::endl;
+    std::cerr << "Example: cict ffffff" << std::endl;
     return 1;
   }
 

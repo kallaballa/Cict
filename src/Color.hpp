@@ -1,5 +1,5 @@
 /*
- * ColorDict
+ * Cict
  * Copyright (C) 2015 Amir Hassan <amir@viel-zu.org>
  *
  * This program is free software; you can redistribute it and/or modify
