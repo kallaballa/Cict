@@ -31,7 +31,7 @@ static long parse24bitHexRGB(const char *str) {
         *temp != '\0' ||
         ((val == std::numeric_limits<long>().min() || val == std::numeric_limits<long>().max()) && errno == ERANGE)) {
          std::cerr << "'" << str << "' is not a 24bit hexadecimal value." << std::endl;
-         std::cerr << "See 'ciff -h' for the correct format." << std::endl;
+         std::cerr << "See 'cict -h' for the correct format." << std::endl;
          exit(1);
     }
     return val;
