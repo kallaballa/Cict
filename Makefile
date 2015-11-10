@@ -6,7 +6,7 @@ TARGET  := cict.js
 else
 TARGET  := cict 
 endif
-SRCS    := src/Cict.cpp src/NamedColorTable.cpp
+SRCS    := src/Cict.cpp src/NamedColorTree.cpp
 OBJS    := ${SRCS:.cpp=.o} 
 DEPS    := ${SRCS:.cpp=.dep} 
 

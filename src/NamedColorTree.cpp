@@ -19,7 +19,7 @@
 
 #include <sstream>
 #include <fstream>
-#include "NamedColorTable.hpp"
+#include "NamedColorTree.hpp"
 
 namespace kallaballa {
 

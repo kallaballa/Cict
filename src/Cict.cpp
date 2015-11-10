@@ -19,7 +19,7 @@
 
 #include <iostream>
 #include <iomanip>
-#include "NamedColorTable.hpp"
+#include "NamedColorTree.hpp"
 
 int main(int argc, char** argv) {
   using namespace kallaballa;
