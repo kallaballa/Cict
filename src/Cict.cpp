@@ -30,13 +30,13 @@ int main(int argc, char** argv) {
     return 1;
   }
 
-  NamedColorTree ral;
-  ral.readFromFile("colordict.txt");
+  NamedColorTree colorTree;
+  colorTree.readFromFile("colordict.txt");
 
   NamedColor sample;
   sample.rgb = strtol(argv[1], NULL, 16);
 
-  auto nearest = ral.find_nearest(sample);
+  auto nearest = colorTree.find_nearest(sample);
 
   std::cout
     << std::dec << int(nearest.second) << "\t#"
