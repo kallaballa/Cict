@@ -19,7 +19,23 @@
 
 #include <iostream>
 #include <iomanip>
+#include <limits>
 #include "NamedColorTree.hpp"
+
+static long parse24bitHexLong(const char *str) {
+    errno = 0;
+    char *temp;
+    long val = strtol(str, &temp, 16);
+
+    if (std::string(str).length() != 6 || temp == str ||
+        *temp != '\0' ||
+        ((val == std::numeric_limits<long>().min() || val == std::numeric_limits<long>().max()) && errno == ERANGE)) {
+         std::cerr << "'" << str << "' is not a 24bit hexadecimal value." << std::endl;
+         std::cerr << "For example white is represented by the following string ffffff" << std::endl;
+         exit(1);
+    }
+    return val;
+}
 
 int main(int argc, char** argv) {
   using namespace kallaballa;
@@ -34,7 +50,7 @@ int main(int argc, char** argv) {
   colorTree.readFromFile("colordict.txt");
 
   NamedColor sample;
-  sample.rgb = strtol(argv[1], NULL, 16);
+  sample.rgb = parse24bitHexLong(argv[1]);
 
   auto nearest = colorTree.find_nearest(sample);
 
