@@ -22,7 +22,7 @@
 #include <limits>
 #include "NamedColorTree.hpp"
 
-static long parse24bitHexLong(const char *str) {
+static long parse24bitHexRGB(const char *str) {
     errno = 0;
     char *temp;
     long val = strtol(str, &temp, 16);
@@ -50,7 +50,7 @@ int main(int argc, char** argv) {
   colorTree.readFromFile("colordict.txt");
 
   NamedColor sample;
-  sample.rgb = parse24bitHexLong(argv[1]);
+  sample.rgb = parse24bitHexRGB(argv[1]);
 
   auto nearest = colorTree.find_nearest(sample);
 
