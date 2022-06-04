@@ -6,13 +6,13 @@ from the file colordict.txt - that list of course doesn't provide a distinct nam
 Instead it searches for the closest color (euclidean metric used on the RGB values) and chooses that name.
 Additionally it outputs the hex value of the found color aswell as the distance to the given color.
 
-##Build
+## Build
 
     git clone https://github.com/kallaballa/Cict.git
     cd Cict
     make
 
-##Usage
+## Usage
 
 Simply pass a 24bit RGB hex value as the first and only parameter. 
 
